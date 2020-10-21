@@ -34,7 +34,7 @@
         app:layout_constraintStart_toEndOf="@+id/sdv_icon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_default="wrap"
-        tools:text="jdf djfhjd sjdf jd f djf dj f djsj df s df ssj df j dsf" />
+        tools:text="dynamic text some sdkf dk s kd skd flka eiuweqdsfj ew ffdskf s faeiow dskf skd fweoijf sdkflksdjf" />
 
     <TextView
         android:id="@+id/tv_status"
@@ -45,10 +45,9 @@
         android:paddingEnd="@dimen/margin_tiniest"
         android:textColor="#E94B3C"
         android:textSize="10sp"
-        app:layout_constrainedWidth="true"
         app:layout_constraintWidth_default="wrap"
         app:layout_constraintEnd_toStartOf="@+id/iv_chevron_indicator"
-         app:layout_constraintStart_toEndOf="@+id/tv_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_title"
         tools:layout_editor_absoluteY="9dp"
         tools:text="New"
         tools:visibility="visible" />
