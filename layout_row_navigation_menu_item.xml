@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <com.dailyobjects.views.imageviews.NetworkImageView
+        android:id="@+id/sdv_icon"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:ellipsize="end"
+        android:fontFamily="@font/sharp_sans_no1_bold"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_smallest"
+        android:paddingEnd="@dimen/margin_smallest"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_status"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/sdv_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="jdf djfhjd sjdf jd f djf dj f djsj df s df ssj df j dsf" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sharp_sans_no1_bold"
+        android:paddingStart="@dimen/margin_tiniest"
+        android:paddingEnd="@dimen/margin_tiniest"
+        android:textColor="#E94B3C"
+        android:textSize="10sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintEnd_toStartOf="@+id/iv_chevron_indicator"
+         app:layout_constraintStart_toEndOf="@+id/tv_title"
+        tools:layout_editor_absoluteY="9dp"
+        tools:text="New"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_chevron_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="@dimen/margin_smallest"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+         app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
